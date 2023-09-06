@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Task6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      form {
+        padding: 0% 25%;
+      }
+      button {
+        background-color: rgb(60, 188, 60);
+        color: white;
+        padding: 14px 0px;
+        margin: 8px 0;
+        border: none;
+        width: 100%;
+      }
+      .cancelbtn {
+        width: auto;
+        padding: 10px 20px;
+        background-color: red;
+      }
+
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+
+      .container {
+        padding: 20px 0px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      span.psw a:link,
+      a:visited,
+      a:hover {
+        color: black;
+        font-family: "Verdana", sans-serif;
+      }
+      label[for="uname"],
+      label[for="psw"] {
+        font-family: "Verdana", sans-serif;
+        font-weight: bold;
+      }
+      label[for="remember"] {
+        font-family: "Verdana", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div class="imgcontainer">
+        <img
+          style="height: 300px; width: 300px"
+          src="avatar_nishanth.png"
+          alt="Avatar"
+          class="avatar"
+        />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label for="remember">
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn" style="border-radius: 0.4em">
+          Cancel
+        </button>
+        <span class="psw"
+          ><a href="#" style="text-decoration: none"
+            >Forgot <u>password?</u></a
+          ></span
+        >
+      </div>
+    </form>
+  </body>
+</html>
